@@ -16,11 +16,18 @@ public class C03_DropdownMenu extends TestBase {
     public void test01(){
         //● https://the-internet.herokuapp.com/dropdown adresine gidin.
         driver.get("https://the-internet.herokuapp.com/dropdown");
+
         //  1.Index kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
+
         WebElement dropdownElementi = driver.findElement(By.id("dropdown"));
+
         Select select = new Select(dropdownElementi);
+
         select.selectByIndex(1);
+
         System.out.println("index ile secilen option 1 : "+select.getFirstSelectedOption().getText());
+
+
         //  2.Value kullanarak Seçenek 2'yi (Option 2) seçin ve yazdırın
         bekle(2);
         select.selectByValue("2");

@@ -76,6 +76,8 @@ public class C04_JsAllerts extends TestBase {
                 .getText();
         Assert.assertTrue(actualSonucYazisi.contains(expectedSonucIcerik));
         bekle(2);
+
+
     }
 
 
