@@ -11,8 +11,6 @@ import java.time.Duration;
 
 public class C07_BeforeTestAfterTestNotasyonlari {
 
-
-
     /*
        Junit ile class'daki her test method'u calismaya baslamadan once
        calismasini istedimiz method'lari
@@ -93,8 +91,5 @@ public class C07_BeforeTestAfterTestNotasyonlari {
     public void teardown(){
         driver.close();
     }
-
-
-
 
 }

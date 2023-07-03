@@ -16,7 +16,7 @@ public class C05_Actions extends TestBaseQuit {
         //2- https://the-internet.herokuapp.com/context_menu sitesine gidin
         driver.get("https://the-internet.herokuapp.com/context_menu");
         //3- Cizili alan uzerinde sag click yapin
-        Actions actions = new Actions(driver);
+        Actions actions=new Actions(driver);
         WebElement ciziliAlanElementi = driver.findElement(By.id("hot-spot"));
         actions.contextClick(ciziliAlanElementi).perform();
         //4- Alert’te cikan yazinin “You selected a context menu” oldugunu test edin.

@@ -46,7 +46,8 @@ public class C04_SwitchingWindow extends TestBaseQuit {
                ikinciSayfaWHD olarak kaydedelim
             5- buldugumuz  ikinciSayfaWHD'ni kullanarak 2.sayfaya gecelim
          */
-        Set<String> wHDSeti = driver.getWindowHandles();
+     Set<String> wHDSeti = driver.getWindowHandles();
+
         System.out.println(wHDSeti);
         String ikinciSafyaHandle="";
         for (String each: wHDSeti
