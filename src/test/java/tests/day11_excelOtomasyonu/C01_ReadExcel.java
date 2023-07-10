@@ -21,11 +21,9 @@ public class C01_ReadExcel {
         //masa üstü yada downloads gibi baska bir kalsörün içinde ise
         //dosya yolu dinamik hale getirilebilir
 
-
         FileInputStream fis=new FileInputStream(dosyayolu);
 
         Workbook workbook = WorkbookFactory.create(fis);
-
 
         /*
 
@@ -41,11 +39,6 @@ public class C01_ReadExcel {
 
         Eger ana excelin de değişmesini isitiyorsak islem bittikten sonra yani claasısın en sonunda
         workbook daki yeni hali excele kaydetemiz gerekir.
-
-
-
-
-
 
          */
 
@@ -75,11 +68,6 @@ public class C01_ReadExcel {
         Assert.assertEquals(expectedBaskentIsmi,actualBaskentIsmi);
 
 
-
-
     }
-
-
-
 
 }
